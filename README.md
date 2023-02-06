@@ -1,4 +1,4 @@
-###React Frontend Development
+#React Frontend Development
 React project created for CodeAcademy Frontend Dev curriculum
 
 # Getting Started with Create React App
