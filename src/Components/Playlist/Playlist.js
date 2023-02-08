@@ -21,6 +21,13 @@ class Playlist extends React.Component {
           isRemoval={true}
           onRemove={this.props.onRemove}
         />
+        <button
+          className="Playlist-clear"
+          onClick={this.props.onRemoveAll}
+          // style="background-color: red"
+        >
+          CLEAR PLAYLIST
+        </button>
         <button className="Playlist-save" onClick={this.props.onSave}>
           SAVE TO SPOTIFY
         </button>
