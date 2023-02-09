@@ -52,7 +52,13 @@ class App extends React.Component {
     let trackURIs = this.state.playlistTracks.map(track => {
       return track.uri;
     });
-    Spotify.savePlaylist(this.state.playlistName, trackURIs);
+    Spotify.savePlaylist(this.state.playlistName, trackURIs).then(resolve => {
+      if (resolve)
+        console.log(
+          `Playlist ${this.state.playlistName} has saved to your account`
+        );
+      else console.log("ERROR!");
+    });
   }
 
   search(searchTerm) {
